@@ -1,0 +1,19 @@
+Endpoint :: InvoiceGenerated
+
+Produced by: Billing Service
+Consumed by: external systems (ERP, reporting, etc.)
+
+InvoiceGenerated Output in Json, sample output as below
+{
+  "eventId": "uuid",
+  "eventType": "InvoiceGenerated",
+  "occurredAt": "2025-04-03T12:02:00Z",
+  "traceId": "uuid",
+  "data": {
+    "invoiceId": "uuid",
+    "bookingId": "uuid",
+    "amount": 120.0,
+    "currency": "CAD",
+    "status": "Issued"
+  }
+}

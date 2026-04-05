@@ -1,0 +1,18 @@
+Endpoint :: StaffAssigned
+
+Produced by: Workforce Service
+Consumed by: Billing Service, external systems
+
+staffAssigned Output in Json, sample output as below
+{
+  "eventId": "uuid",
+  "eventType": "StaffAssigned",
+  "occurredAt": "2025-04-03T12:01:00Z",
+  "traceId": "uuid",
+  "data": {
+    "bookingId": "uuid",
+    "staffId": "uuid",
+    "centerId": "center-001",
+    "assignmentId": "uuid"
+  }
+}
