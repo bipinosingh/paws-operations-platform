@@ -1,0 +1,15 @@
+Command messages (RabbitMQ)Commands are sent via RabbitMQ and may use a simpler envelope.
+  
+SendBookingConfirmationEmail
+
+Produced by: Booking Service
+Consumed by: Notification Worker
+
+{
+  "commandType": "SendBookingConfirmationEmail",
+  "traceId": "uuid",
+  "data": {
+    "bookingId": "uuid",
+    "ownerEmail": "john.doe@example.com"
+  }
+}
